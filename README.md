@@ -15,4 +15,4 @@ import "cypress-toggle-panel-plugin/controls";
 
 ## Screenshot
 
-<img height="346" src="https://raw.githubusercontent.com/unlocomqx/cypress-toggle-panel-plugin/main/assets/screenshot.png">
+<img alt="screenshot" height="346" src="https://raw.githubusercontent.com/unlocomqx/cypress-toggle-panel-plugin/main/assets/screenshot.png">
