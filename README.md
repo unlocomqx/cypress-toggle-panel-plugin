@@ -12,3 +12,7 @@ npm install --save-dev cypress-toggle-panel-plugin
 // cypress/support/e2e.js and/or cypress/support/component.js
 import "cypress-toggle-panel-plugin/controls";
 ```
+
+## Screenshot
+
+<img height="346" src="./assets/screenshot.png">
