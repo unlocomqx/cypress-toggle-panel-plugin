@@ -1,3 +1,5 @@
+import {get, set} from "idb-keyval"
+
 const doc = window.top.document
 
 const html = `
@@ -31,16 +33,14 @@ if (!doc.querySelector(".sidebar-toggle-panel")) {
   nav.parentElement.insertBefore(button, nav)
 }
 
-function togglePanel() {
-  const toggle = JSON.parse(localStorage.getItem("toggle-panel-plugin") || "false")
-  console.log({toggle})
-  localStorage.setItem("toggle-panel-plugin", JSON.stringify(!toggle))
-  updateState()
+async function togglePanel() {
+  const toggle = await get("toggle-panel-plugin")
+  await set("toggle-panel-plugin", !toggle)
+  await updateState()
 }
 
-function updateState() {
-  const toggle = JSON.parse(localStorage.getItem("toggle-panel-plugin") || "false")
-  console.log("updateState", {toggle})
+async function updateState() {
+  const toggle = await get("toggle-panel-plugin")
   const panel = doc.querySelector("[data-cy=reporter-panel]")
   if (toggle) {
     panel.style.display = "none"

@@ -11,7 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^12.17.3"
+    "cypress": "^12.17.3",
+    "idb-keyval": "^6.2.1"
   },
   "devDependencies": {
     "svelte": "^4.1.2",
