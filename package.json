@@ -10,6 +10,10 @@
   "files": [
     "controls.js"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unlocomqx/cypress-toggle-panel-plugin"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
